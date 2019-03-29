@@ -58,8 +58,13 @@
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm-6 align-self-center">
+                <div class="col-6 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid">
+                </div>
+                <div class="col-6 col-sm align-self-center">
+                    <a href="#reservetable" class="btn btn-warning">
+                        Reserver Table
+                    </a>
                 </div>
             </div>
         </div>
@@ -74,7 +79,8 @@
                 <div class="media">
                     <img src="img/uthappizza.png" class="d-flex mr-3 img-thumbnail align-self-center">
                     <div class="media-body">
-                        <h2>Uthappizza</h2>
+                        <h2>Uthappizza <span class="badge badge-danger">HOT</span><span
+                                class="badge badage-secondary badge-pill">$4.99</span></h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola
                             olives,
                             ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
@@ -90,9 +96,12 @@
             </div>
             <div class="col col-sm col-md">
                 <div class="media">
-                    <img src="img/buffet.png" class="d-flex mr-3 img-thumbnail align-self-center">
+                    <img src="img/buffet.png" class="d-flex mr-3 img-thumbnail align-self-center order-last">
                     <div class="media-body">
-                        <h2>Weekend Grand Buffet</h2>
+                        <h2>
+                            Weekend Grand Buffet
+                            <div class="badge badge-danger">NEW</div>
+                        </h2>
                         <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing
                             appetizers,
                             six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
@@ -117,6 +126,67 @@
                             closely with
                             whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
                             experiences. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 col-sm-10 offset-sm-1">
+                <div class="card" id="reservertable">
+                    <h5 class="card-header bg-warning text-white">
+                        Reserve a Table
+                    </h5>
+                    <div class="card-body">
+                        <form action="#" id="reservetable">
+                            <div class="form-group row">
+                                <div class="col-sm-3" for="numOfGuests">
+                                    Number of Guests
+                                </div>
+                                <div class="col-sm">
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="numOfGuests"
+                                            id="numOfGuests1">
+                                        <label for="numOfGuests1">1</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="numOfGuests"
+                                            id="numOfGuests2">
+                                        <label for="numOfGuests2">2</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="numOfGuests"
+                                            id="numOfGuests3">
+                                        <label for="numOfGuests3">3</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="numOfGuests"
+                                            id="numOfGuests4">
+                                        <label for="numOfGuests4">4</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input type="radio" class="form-check-input" name="numOfGuests"
+                                            id="numOfGuests5">
+                                        <label for="numOfGuests5">5</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="date" class="col-sm-3">
+                                    Date and Time
+                                </label>
+                                <div class="col-sm-4">
+                                    <input type="text" name="date" id="date" class="form-control" placeholder="Date">
+                                </div>
+                                <div class="col-sm">
+                                    <input type="text" name="time" id="time" class="form-control" placeholder="Time">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-9 offset-sm-3">
+                                    <input type="submit" value="Reserve" class="btn btn-primary">
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
